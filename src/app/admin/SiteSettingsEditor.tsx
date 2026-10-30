@@ -286,13 +286,13 @@ export default function SiteSettingsEditor({
                 after you save.
               </p>
             </div>
-            <Button
+            <button
               type="submit"
               disabled={saving}
-              className="bg-white text-brand hover:bg-sky-50"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-2.5 text-sm font-bold text-[#1a4789] shadow-md transition hover:bg-sky-50 disabled:cursor-not-allowed disabled:opacity-60"
             >
               {saving ? "Saving..." : "Save all changes"}
-            </Button>
+            </button>
           </div>
           <div className="relative mt-5 flex gap-2 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {JUMP_LINKS.map((link) => (
